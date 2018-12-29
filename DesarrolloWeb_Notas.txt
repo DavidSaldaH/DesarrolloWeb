@@ -1,0 +1,13 @@
+[alt=""] en la etiqueta <img> sirve para mostrar un texto alternativo en caso de que la imagen no cargue.
+<link rel="icon" type="image/png" href="img/favicon.png"> Logo en Pestaña
+
+Input type="submit" -> es un boton tambien
+[for=""] en la etiqueta label hace un enlace al elemento con el id que le asigne, así cuando se le de click al label el focus se pondrá en el atributo especificado.
+
+
+Links
+[href="#id del elemento al que me quiero dirigir"] ->  dentro de la misma pagina
+[href="/rutadelapg"] -> navegar a otras paginas de mi web.
+[href="link directo del contenido"] -> navegar a paginas o contenidos externos a mi web.
+
+<a target="_blank"> -> sirve para abrir el contenido del linkl en una pg nueva y no reemplazar en la que estamos
