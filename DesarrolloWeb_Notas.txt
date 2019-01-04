@@ -11,3 +11,34 @@ Links
 [href="link directo del contenido"] -> navegar a paginas o contenidos externos a mi web.
 
 <a target="_blank"> -> sirve para abrir el contenido del linkl en una pg nueva y no reemplazar en la que estamos
+
+Style -> tiene mas prioridad un style inline que uno externo. la prioridad se dá por el stylo que está mas cerca del elemento.
+atributo !important rompe el squema de cascada y le da prioridad a la clase css. -> no recomendable.
+
+/*comentarios css*/
+
+------------------------------------------Reglas  Declaraciones Propiedades Y Valores CSS.
+Ejemplo :
+
+Todo esto es una regla.
+
+            header{
+                background: palevioletred;
+            }
+
+header          -> Selector.
+{}              -> Declaración.
+background      -> Propiedad.
+palevioletred   -> Valor.
+
+------------------------------------------Selectores
+
+Selectores son la manera de identificar a uno o mas elementos en el html.
+Selector de etiqueta: Referencia al nombre del tag html -> header - section - article - nav.
+Selector descendiente es un elemento hijo de otro elemento -> body -> header -> div -> nav -> ol -> li -> a.
+Selector clase -> .nombreClase -> se puede usar para varios elementos.
+Selector id -> #nombreClase -> se usa para darle un estilo propio a cada elemento unico.
+
+
+Estilos del navegador
+User agent stylesheet son los estilos que maneja el navegador, cada navegador puede variar así que hay que tener esto en cuenta.
