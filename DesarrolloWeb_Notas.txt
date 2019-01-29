@@ -1,3 +1,6 @@
+////////////////////////////////////////////////// HTML ////////////////////////////////////////
+DOM es el acrónimo de Document Object Model
+
 [alt=""] en la etiqueta <img> sirve para mostrar un texto alternativo en caso de que la imagen no cargue.
 <link rel="icon" type="image/png" href="img/favicon.png"> Logo en Pestaña
 
@@ -17,7 +20,7 @@ atributo !important rompe el squema de cascada y le da prioridad a la clase css.
 
 /*comentarios css*/
 
-------------------------------------------Reglas  Declaraciones Propiedades Y Valores CSS.
+------------------------------------------Reglas  Declaraciones Propiedades Y Valores CSS.-------------------------------
 Ejemplo :
 
 Todo esto es una regla.
@@ -31,7 +34,7 @@ header          -> Selector.
 background      -> Propiedad.
 palevioletred   -> Valor.
 
-------------------------------------------Selectores
+---------------------------------------------------------------Selectores----------------------------------------------
 
 Selectores son la manera de identificar a uno o mas elementos en el html.
 Selector de etiqueta: Referencia al nombre del tag html -> header - section - article - nav.
@@ -42,3 +45,22 @@ Selector id -> #nombreClase -> se usa para darle un estilo propio a cada element
 
 Estilos del navegador
 User agent stylesheet son los estilos que maneja el navegador, cada navegador puede variar así que hay que tener esto en cuenta.
+
+////////////////////////////////////////////////////////////// CSS /////////////////////////////////////////////////
+//Colores
+Sé puede representar colores de 3 maneras.
+
+1) Palabra  clave [blue]
+2) Hexadecimales cada dos 'F' dan el valor al patro RGB [#FF(R)FF(G)FF(B)], tambien están las opciones de rgb() o rgba()
+3) hls() y hlsa()
+
+Unidades de medida
+Pixel: Es la menor unidad homogenea de color que forma parte de una imagen digital.
+em: Con respecto al interlineado 1.5em -> El uno representa un 100% de la fuente por lo que respeta su espaci,
+la hace legible pero los renglones quedan a ras, el .5 quiere decir que tome el 50% del tamaño de la fuente y 
+lo agregue al espacio restante
+
+// Imagenes
+para las rutas de las imagenes en css hay:
+relativas ('../[ruta del archivo]') con el ../ me salgo de la carpeta para buscar en otro lugar.
+absolutas ('ruta del archivo desde la raiz') esta ruta indica el path entero del archivo.

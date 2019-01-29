@@ -1,3 +1,70 @@
+/* ----------------------------------SELECTORES
 header{
     background: palevioletred;
+}
+*/
+
+/*-------------------------------------Tipos de Fuente*/
+/*Asignar un tipo de fuente.
+En el ejemplo vemos que se ponen 3, en caso de no encontrar la primera buscará las demas*/
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Si una fuente tiene mas de dos palabras, se debe poner entre comillas simples '' */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal; /*Es el grosor de la fuente*/
+    /*font-style: italic; Estilo de la fuente*/
+}
+
+/*Para implementar una fuente que no está en el sistema 
+simplemente se toma la ruta y se pone en los links del HTML*/
+
+/*Propiedades a los textos*/
+
+h1{
+    font-size: 40px;  /*Tamaño de fuente*/
+    line-height: 1.5; /*Tamaño interlineado*/
+    letter-spacing: -.2px; /*Espacio entre letras*/
+    /*text-transform: capitalize; Transforma el texto*/
+    /*text-decoration: line-through; Modificaciones al texto*/
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+.hero{
+    height: 300px;
+    background-image: url('../img/hero.jpg');
+    background-color: #1b2127;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    color: whitesmoke;
+}
+
+.project-details{
+    width: 500px;
+}
+
+.project-imgContainer {
+    width: 500px;
+}
+
+.header {
+    background-color: #1b2127;
+    color: whitesmoke;
+}
+
+.header a {
+    color: whitesmoke;
+    text-decoration: none;
 }
