@@ -64,3 +64,33 @@ lo agregue al espacio restante
 para las rutas de las imagenes en css hay:
 relativas ('../[ruta del archivo]') con el ../ me salgo de la carpeta para buscar en otro lugar.
 absolutas ('ruta del archivo desde la raiz') esta ruta indica el path entero del archivo.
+
+--------------------------------------------------- Alineaciones --------------------------------------------
+//Margin
+Es el margen externo del elemento, se puede expresar de dos maneras:
+margin: top right bottom left [100px 50px 60px 30px] 
+margin : top y bottom en uno solo y right y left en otro[100px 20px]
+
+//Padding
+Es el margen del elemento padre con respecto al hijo.
+padding: top right bottom left [100px 50px 60px 30px]
+padding: top y bottom en uno solo y right y left en otro[100px 20px]
+
+//Display 
+esta propiedad me permite mostrar o no un elemento y tambie me permite decidir de que manera mostrarlo.
+display: flex;
+
+/*flex en elemento Padre: pondra todos los elementos en linea pero no respeta el tamaño,
+acopla los elementos al tamaño del conatainer para que todos entren*/
+
+/*flex en elemento Hijo: Con esta propiedad defino que tanto se puede modificar el el tamaño del elemento,
+en caso de ser 0, se activará el scroll horizontal para que todos los elementos entren pero no se les modifique el tamaño*/
+
+En caso de usar un Flex se determina como se vana trabajar los elementos:
+Horizzontal
+flex-direction: row;
+justify-content: [initial o left, center, end oright ] -> actua como ajustes horizontales (Contenido contra la Izquiera, Contenido centrado, contenido contra la derecha).
+align-items : [initial o left, center, end oright] -> actua como ajuste vertical (Contenido contra el techo, contenido centrado, contenido contra el suelo)
+align-selfe: [initial o left, center, end oright] -> se usa para alinear un elemento especifico, (alinearse el mismo)
+
+

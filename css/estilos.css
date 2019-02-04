@@ -10,6 +10,7 @@ En el ejemplo vemos que se ponen 3, en caso de no encontrar la primera buscará 
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 /*Si una fuente tiene mas de dos palabras, se debe poner entre comillas simples '' */
@@ -23,32 +24,83 @@ h6{
     font-weight: normal; /*Es el grosor de la fuente*/
     /*font-style: italic; Estilo de la fuente*/
 }
-
 /*Para implementar una fuente que no está en el sistema 
 simplemente se toma la ruta y se pone en los links del HTML*/
 
 /*Propiedades a los textos*/
-
 h1{
     font-size: 40px;  /*Tamaño de fuente*/
     line-height: 1.5; /*Tamaño interlineado*/
     letter-spacing: -.2px; /*Espacio entre letras*/
+    color: whitesmoke;
+    margin: 0;
+    align-items: center;
+    /*margin: top right bottom left (100px 50px 60px 30px) ó top y bottom en uno solo y right y left en otro (100px 20px)*/
     /*text-transform: capitalize; Transforma el texto*/
     /*text-decoration: line-through; Modificaciones al texto*/
 }
 
 h1 strong{
-    color: #026fff;
+    color: #056fff;
+}
+h2 {
+    color: #056fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
 .hero{
     height: 300px;
-    background-image: url('../img/hero.jpg');
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    color: whitesmoke;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.hero-img{
+object-fit: cover;
+}
+
+.portfolio{
+    background-color: #FAFAFA;
+    padding: 20px;
+}
+
+.project{
+    border: 1px solid gray; /*grosor tipo color*/
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/*.project-date{
+    margin: 10px 0;
+}*/
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .project-details{
@@ -62,9 +114,189 @@ h1 strong{
 .header {
     background-color: #1b2127;
     color: whitesmoke;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
 }
 
 .header a {
     color: whitesmoke;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.flexbox{
+display: flex;
+flex-wrap: wrap; /*Con esta propiedad los elementos no activan el scroll horizontal sino que generan una doble fila*/
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
+    flex-shrink: 0; /*No permite que se defore el tamaño del elemento*/
+}
+
+.footer {
+    background-color: #1b2127;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foote img{
+    vertical-align: middle; /*Este es otro modo de alinear*/
+}
+
+.footer a{
+    color: whitesmoke;
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#event-list-title{
+    margin-left: 20px;
+}
+
+.event{
+    border-radius: 10px;
+    overflow: hidden; /*Si un elemento sobresale del borde, se oculta el exedente*/
+    flex-shrink: 0;
+    margin: 10px;
+    width: 480px;
+    background-color: #f4fbff;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /*Propiedad para ajustar la imagen*/
+}
+
+.event-detail{
+    margin: 20px 40px;;
+    margin-top: -40px;
+    background-color: whitesmoke;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    color: #056fff;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.contact{
+    background-color: #056fff;
+    color: whitesmoke;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url('../img/twitter.svg');
+}
+
+.social-link.facebook{
+    background-image: url('../img/facebook.svg');
+}
+
+.social-link.github{
+    background-image: url('../img/github.svg');
+}
+
+.social-link.instagram{
+    background-image: url('../img/instagram.svg');
+}
+
+.form-email input{
+padding: 10px 20px;
+background-image: url('../img/envelope.png');
+background-size: 15px 15px;
+background-repeat: no-repeat; /*Propiedad para especificar si quiero que se haga msaico o no*/
+background-position-y: center;
+background-position-x: 5px;
+border-radius: 5px;
+}
+
+.form-email button{
+    display: block;
+    background: transparent;
+    color: whitesmoke;
+    padding: 10px o;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border-color: white;
+    border-style: groove;
+    margin: 15px 0;
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
